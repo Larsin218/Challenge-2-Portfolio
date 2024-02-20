@@ -1,0 +1,60 @@
+:root {
+  --dark: #18191a;
+  --light: #ffffff;
+  --midhi: #d2b48c;
+  --midlo: #184632;
+}
+
+body {
+    background: var(--dark);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.name {
+  font-size: 25px;
+  color: var(--light);
+}
+
+.navbar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--light);
+  margin-left: 30px;
+  transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--midlo);
+}
+
+.home {
+    height: 75vh;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.about {
+    background: var(--midhi);
+    padding: 5px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
